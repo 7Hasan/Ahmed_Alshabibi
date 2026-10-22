@@ -3,68 +3,160 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#103b31">
-<meta name="description" content="صدقة جارية عن روح سعيد باوزير رحمه الله. قرآن كريم وأذكار ودعاء.">
+<meta name="theme-color" content="#0f172a">
+<meta name="description" content="صدقة جارية عن روح أحمد مبروك الشبيبي رحمه الله. قرآن كريم وأذكار ودعاء وتطبيقات نافعة.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="صدقة جارية عن سعيد باوزير رحمه الله">
-<meta property="og:description" content="نسأل الله أن يغفر له ويرحمه، وأن يجعل هذا العمل نافعًا.">
-<meta property="og:image" content="https://7hasan.github.io/Saeed_Bawzeer/campaign.png">
-<meta property="og:url" content="https://7hasan.github.io/Saeed_Bawzeer/">
-<title>صدقة جارية عن سعيد باوزير</title>
+<meta property="og:title" content="صدقة جارية عن أحمد مبروك الشبيبي رحمة الله عليه">
+<meta property="og:description" content="نسأل الله أن يغفر له ويرحمه، وأن يجعل هذا العمل نافعًا وشافعًا له.">
+<meta property="og:image" content="https://7hasan.github.io/Ahmed_Alshabibi/campaign.png">
+<meta property="og:url" content="https://7hasan.github.io/Ahmed_Alshabibi/">
+<title>صدقة جارية عن أحمد مبروك الشبيبي</title>
 <style>
-:root{--g:#103b31;--g2:#1b5a48;--gold:#d9bf7b;--cream:#f7f3e8;--ink:#19332b;--muted:#6c7b73}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Tahoma,Arial,sans-serif;line-height:1.8}a{color:inherit}
-.hero{background:radial-gradient(circle at 80% 0%,#2b705b 0,transparent 38%),linear-gradient(145deg,#0a2b24,#174a3b);color:#fff;padding:45px 20px;text-align:center;position:relative;overflow:hidden}.inner{max-width:760px;margin:auto}.bism{color:var(--gold);font-size:14px;letter-spacing:1px}.emblem{width:76px;height:76px;border:1px solid #d9bf7b88;border-radius:50%;display:grid;place-items:center;margin:18px auto 10px;color:var(--gold);font-size:34px;background:rgba(217,191,123,0.05)}h1{font-size:clamp(28px,7vw,42px);line-height:1.35;margin:8px 0;color:#fff}.subtitle{color:#e8e1cf;margin:0 auto;max-width:520px;font-size:15px}
-.name-card{max-width:480px;margin:24px auto 0;padding:20px;border:1px solid #d9bf7b66;border-radius:20px;background:linear-gradient(135deg,rgba(255,255,255,0.07),rgba(255,255,255,0.02));backdrop-filter:blur(5px);display:flex;flex-direction:column;align-items:center;gap:14px;box-shadow:0 10px 30px rgba(0,0,0,0.2)}
+:root {
+    --bg-main: #f0f6fa;
+    --card-bg: #ffffff;
+    --primary: #0f172a;       /* كحلي ملوكي عميق */
+    --primary-light: #1e293b;
+    --accent: #0284c7;        /* أزرق سماوي هادئ */
+    --accent-light: #e0f2fe;  /* سماوي فاتح جداً */
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --border-color: #e2e8f0;
+    --hero-grad: linear-gradient(145deg, #0f172a, #1e293b);
+    --gold: #38bdf8;          /* أزرق سماوي مضيء للتأكيدات */
+}
+
+/* الوضع الداكن (Dark Mode) */
+body.dark-mode {
+    --bg-main: #0b1329;
+    --card-bg: #152238;
+    --primary: #e2e8f0;
+    --primary-light: #cbd5e1;
+    --accent: #38bdf8;
+    --accent-light: #1e293b;
+    --text-main: #f1f5f9;
+    --text-muted: #94a3b8;
+    --border-color: #1e293b;
+    --hero-grad: linear-gradient(145deg, #070d19, #0f172a);
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg-main);color:var(--text-main);font-family:Tahoma,Arial,sans-serif;line-height:1.8;transition:background 0.3s ease, color 0.3s ease}
+a{color:inherit}
+
+.theme-toggle-btn{position:fixed;top:14px;left:14px;z-index:99;background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.2);color:#fff;padding:8px 14px;border-radius:99px;cursor:pointer;font-size:13px;font-weight:bold;display:flex;align-items:center;gap:6px;transition:all 0.2s}
+.theme-toggle-btn:hover{background:rgba(255,255,255,0.3)}
+
+.hero{background:var(--hero-grad);color:#fff;padding:45px 20px;text-align:center;position:relative;overflow:hidden;border-bottom:3px solid var(--accent)}
+.inner{max-width:760px;margin:auto}
+.bism{color:var(--gold);font-size:14px;letter-spacing:1px}
+.emblem{width:76px;height:76px;border:1px solid rgba(56,189,248,0.3);border-radius:50%;display:grid;place-items:center;margin:18px auto 10px;color:var(--gold);font-size:34px;background:rgba(56,189,248,0.05)}
+h1{font-size:clamp(28px,7vw,42px);line-height:1.35;margin:8px 0;color:#fff}
+.subtitle{color:#e2e8f0;margin:0 auto;max-width:520px;font-size:15px}
+
+.name-card{max-width:480px;margin:24px auto 0;padding:20px;border:1px solid rgba(56,189,248,0.3);border-radius:20px;background:rgba(255,255,255,0.05);backdrop-filter:blur(8px);display:flex;flex-direction:column;align-items:center;gap:14px;box-shadow:0 10px 30px rgba(0,0,0,0.3)}
 .deceased-img{width:96px;height:96px;border-radius:50%;object-fit:cover;border:3px solid var(--gold);box-shadow:0 4px 15px rgba(0,0,0,0.4)}
-.name-card strong{display:block;font-size:24px;color:var(--gold);text-align:center}
-.name-card p{margin:0;color:#f4efdf;text-align:center;font-size:14px}
-nav{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;padding:12px 10px;background:#fff;box-shadow:0 4px 18px #102f2810;position:sticky;top:0;z-index:10}nav a{text-decoration:none;font-size:13px;padding:8px 14px;border-radius:99px;background:#edf3ed;color:var(--g);font-weight:bold;transition:all 0.2s}nav a:hover{background:var(--g);color:#fff}
-main{max-width:760px;margin:24px auto;padding:0 14px}.section{background:#fff;border:1px solid #e9e4d7;border-radius:22px;padding:22px;margin:16px 0;box-shadow:0 8px 28px #102f2808}h2{font-size:21px;margin:0 0 8px;color:var(--g);display:flex;align-items:center;gap:8px}.intro{margin:0 0 16px;color:var(--muted);font-size:14px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;text-decoration:none;border:0;border-radius:12px;padding:12px 18px;background:var(--g);color:white;font-weight:bold;font-size:14px;cursor:pointer;transition:background 0.2s}.btn:hover{background:var(--g2)}.btn.outline{background:#fff;color:var(--g);border:1px solid #d6e1d8}.btn.outline:hover{background:#edf3ed}.actions{display:flex;gap:10px;flex-wrap:wrap}.tilegrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.tile{padding:14px;border-radius:14px;background:#f5f7f1;border:1px solid #e5ebdf}.tile summary{cursor:pointer;list-style:none}.tile summary::-webkit-details-marker{display:none}.tile summary strong{display:block;color:var(--g)}.tile summary span{font-size:12px;color:var(--muted)}.tile .ico{font-size:24px}.tile p{font-size:14px;margin:10px 0}.dua{background:#f8f4e9;border-right:4px solid var(--gold);padding:14px 16px;border-radius:12px;margin:12px 0}.dua p{margin:0;font-size:16px}.small{font-size:12px;color:var(--muted)}.campaign{display:block;width:100%;height:auto;border-radius:14px;border:1px solid #e9e4d7}.profile{display:flex;align-items:center;gap:16px}.avatar{flex:0 0 76px;width:76px;height:76px;border-radius:50%;object-fit:cover;border:2px solid var(--gold)}
+.name-card strong{display:block;font-size:22px;color:var(--gold);text-align:center}
+.name-card p{margin:0;color:#f1f5f9;text-align:center;font-size:14px}
 
-/* التعديلات الفخمة الجديدة */
-.interactive-box{background:var(--cream);padding:18px;border-radius:16px;text-align:center;margin-bottom:14px;border:1px solid #e9e4d7}
+nav{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;padding:12px 10px;background:var(--card-bg);box-shadow:0 4px 18px rgba(15,23,42,0.06);position:sticky;top:0;z-index:10;border-bottom:1px solid var(--border-color)}
+nav a{text-decoration:none;font-size:13px;padding:8px 14px;border-radius:99px;background:var(--accent-light);color:var(--text-main);font-weight:bold;transition:all 0.2s}
+nav a:hover{background:var(--accent);color:#fff}
+
+main{max-width:760px;margin:24px auto;padding:0 14px}
+.section{background:var(--card-bg);border:1px solid var(--border-color);border-radius:22px;padding:22px;margin:16px 0;box-shadow:0 8px 28px rgba(15,23,42,0.04);transition:background 0.3s ease}
+h2{font-size:21px;margin:0 0 8px;color:var(--accent);display:flex;align-items:center;gap:8px}
+.intro{margin:0 0 16px;color:var(--text-muted);font-size:14px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;text-decoration:none;border:0;border-radius:12px;padding:12px 18px;background:var(--accent);color:white;font-weight:bold;font-size:14px;cursor:pointer;transition:all 0.2s}
+.btn:hover{opacity:0.9;transform:translateY(-1px)}
+.btn.outline{background:transparent;color:var(--text-main);border:1px solid var(--border-color)}
+.btn.outline:hover{background:var(--accent-light)}
+.actions{display:flex;gap:10px;flex-wrap:wrap}
+
+.tilegrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.tile{padding:14px;border-radius:14px;background:var(--accent-light);border:1px solid var(--border-color)}
+.tile summary{cursor:pointer;list-style:none}
+.tile summary::-webkit-details-marker{display:none}
+.tile summary strong{display:block;color:var(--text-main)}
+.tile summary span{font-size:12px;color:var(--text-muted)}
+.tile .ico{font-size:24px}
+.tile p{font-size:14px;margin:10px 0}
+
+.dua{background:var(--accent-light);border-right:4px solid var(--accent);padding:14px 16px;border-radius:12px;margin:12px 0}
+.dua p{margin:0;font-size:16px;color:var(--text-main)}
+.small{font-size:12px;color:var(--text-muted)}
+
+/* تطبيقات نافعة */
+.apps-grid{display:grid;grid-template-columns:1fr;gap:12px;margin-top:14px}
+.app-card{background:var(--accent-light);border:1px solid var(--border-color);border-radius:16px;padding:16px;transition:all 0.2s}
+.app-card:hover{border-color:var(--accent)}
+.app-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.app-badge{background:var(--card-bg);color:var(--accent);font-size:11px;padding:3px 8px;border-radius:6px;font-weight:bold;border:1px solid var(--border-color)}
+.app-desc{font-size:13px;color:var(--text-muted);margin:0 0 12px}
+.app-details-toggle{cursor:pointer;font-size:13px;color:var(--accent);font-weight:bold;list-style:none;user-select:none}
+.app-details-toggle::-webkit-details-marker{display:none}
+.store-buttons{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+.store-btn{font-size:12px;padding:8px 12px;border-radius:8px}
+
+/* التفاعليات وسجل الدعاء */
+.interactive-box{background:var(--accent-light);padding:18px;border-radius:16px;text-align:center;margin-bottom:14px;border:1px solid var(--border-color)}
 .wall-form{display:flex;flex-direction:column;gap:10px;margin-top:12px}
-.wall-input{width:100%;padding:11px 14px;border:1px solid #d6e1d8;border-radius:10px;font-family:inherit;font-size:14px;background:#fff}
+.wall-input{width:100%;padding:11px 14px;border:1px solid var(--border-color);border-radius:10px;font-family:inherit;font-size:14px;background:var(--card-bg);color:var(--text-main)}
 .wall-messages{max-height:200px;overflow-y:auto;display:flex;flex-direction:column;gap:8px;margin-top:14px;text-align:right}
-.wall-msg-card{background:#fff;padding:10px 14px;border-radius:10px;border:1px solid #e9e4d7;font-size:13px}
-.wall-msg-card span{display:block;font-size:11px;color:var(--muted);margin-top:4px}
+.wall-msg-card{background:var(--accent-light);padding:10px 14px;border-radius:10px;border:1px solid var(--border-color);font-size:13px}
 
-.visitor-widget{display:inline-flex;align-items:center;gap:8px;background:#fff;padding:8px 16px;border-radius:99px;border:1px solid #d6e1d8;cursor:pointer;font-size:13px;color:var(--g);font-weight:bold;box-shadow:0 2px 8px rgba(0,0,0,0.03);transition:all 0.3s ease}
-.visitor-widget:hover{background:#edf3ed}
-footer{text-align:center;padding:30px 15px 40px;color:#6f7a70;font-size:12px}
-@media(min-width:600px){.hero{padding-top:55px;padding-bottom:50px}.section{padding:26px}.tilegrid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.visitor-widget{display:inline-flex;align-items:center;gap:8px;background:var(--card-bg);padding:8px 16px;border-radius:99px;border:1px solid var(--border-color);cursor:pointer;font-size:13px;color:var(--text-main);font-weight:bold;box-shadow:0 2px 8px rgba(0,0,0,0.03);transition:all 0.3s ease}
+.visitor-widget:hover{background:var(--accent-light)}
+footer{text-align:center;padding:30px 15px 40px;color:var(--text-muted);font-size:12px}
+.profile{display:flex;align-items:center;gap:16px}
+.avatar{flex:0 0 76px;width:76px;height:76px;border-radius:50%;object-fit:cover;border:2px solid var(--accent)}
+
+@media(min-width:600px){
+    .hero{padding-top:55px;padding-bottom:50px}
+    .section{padding:26px}
+    .tilegrid{grid-template-columns:repeat(4,minmax(0,1fr))}
+    .apps-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
 </style>
 </head>
 <body>
 
+<!-- زر الوضع الليلي -->
+<button class="theme-toggle-btn" onclick="toggleDarkMode()" id="theme-btn">
+    <span id="theme-icon">🌙</span> <span id="theme-text">الوضع الداكن</span>
+</button>
+
+<!-- الهيدر الرئيسي -->
 <header class="hero" id="top">
     <div class="inner">
         <div class="bism">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
         <div class="emblem" aria-hidden="true">۞</div>
-        <h1>صدقة جارية<br>عن أحمد مبروك الشبيبي 
-         </h1>
-        <p class="subtitle">مساحة مباركة للقرآن والذكر والدعاء، نسأل الله أن ينفع بها، وأن يغفر لفقيدنا ويرحمه.</p>
+        <h1>صدقة جارية<br>عن أحمد مبروك الشبيبي</h1>
+        <p class="subtitle">مساحة مباركة للقرآن والذكر والدعاء، نسأل الله أن ينفع بها، وأن يغفر لفقيدنا ويرحمه ويسكنه فسيح جناته.</p>
         <div class="name-card">
-            <img src="saeed.jpg" alt=" أحمد مبروك الشبيبي رحمة الله علية" class="deceased-img" onerror="this.style.display='none'">
+            <img src="saeed.jpg" alt="أحمد مبروك الشبيبي رحمه الله" class="deceased-img" onerror="this.style.display='none'">
             <div>
-                <strong>أحمد مبروك الشبيبي اسكنه فسيح جناتك يارب</strong>
+                <strong>أحمد مبروك الشبيبي رحمة الله عليه</strong>
                 <p>اللهم اغفر له وارحمه، وعافه واعفُ عنه، وأكرم نزله ووسّع مدخله.</p>
             </div>
         </div>
     </div>
 </header>
 
+<!-- شريط التنقل العلوي -->
 <nav aria-label="التنقل">
     <a href="#quran">القرآن الكريم</a>
     <a href="#dua">الدعاء</a>
     <a href="#adhkar">الأذكار</a>
+    <a href="#apps">تطبيقات نافعة</a>
     <a href="#interactive">الأجر والذكر</a>
     <a href="#wall">سجل الدعاء</a>
-    <a href="#campaign">مبادرة الوفاء</a>
 </nav>
 
 <main>
+<!-- قسم القرآن الكريم -->
 <section class="section" id="quran">
     <h2>📖 القرآن الكريم</h2>
     <p class="intro">اقرأ القرآن الكريم أو استمع إلى التلاوات من أصح المصادر الموثوقة.</p>
@@ -75,8 +167,9 @@ footer{text-align:center;padding:30px 15px 40px;color:#6f7a70;font-size:12px}
     <p class="small" style="margin-top:10px">تُفتح القراءة والتلاوة من مواقعها الأصلية المعتمدة.</p>
 </section>
 
+<!-- قسم الدعاء -->
 <section class="section" id="dua">
-    <h2></h2>ادعُ لـ أحمد </h2>
+    <h2>🤲 ادعُ لأحمد</h2>
     <p class="intro">الدعاء للميت أثمن هدية تصله في قبره، نسأل الله أن يتغمده بواسع رحمته.</p>
     <div class="dua"><p>اللهم اغفر لأحمد مبروك الشبيبي وارحمه، وعافه واعفُ عنه، وأكرم نزله، ووسّع مدخله.</p></div>
     <div class="dua"><p>اللهم آنس وحشته، ونوّر قبره، واجعل قبره روضةً من رياض الجنة.</p></div>
@@ -89,9 +182,10 @@ footer{text-align:center;padding:30px 15px 40px;color:#6f7a70;font-size:12px}
     </div>
 </section>
 
+<!-- قسم الأذكار اليومية -->
 <section class="section" id="adhkar">
     <h2>🌿 الأذكار اليومية</h2>
-    <p class="intro">حصن لسانك وقلبك واجعل ثوابها واصلاً لفقيدنا.</p>
+    <p class="intro">حصن لسانك وقلبك واجعل ثوابها لك و واصلاً لفقيدنا والله يضاعف لمن يشاء.</p>
     <div class="tilegrid">
         <details class="tile"><summary><div class="ico">🌅</div><strong>أذكار الصباح</strong><span>افتح الأذكار</span></summary><p>ابدأ يومك بذكر الله.</p><a href="https://hisnmuslim.com/" target="_blank" rel="noopener noreferrer">اقرأ الأذكار ↗</a></details>
         <details class="tile"><summary><div class="ico">🌇</div><strong>أذكار المساء</strong><span>افتح الأذكار</span></summary><p>اختم يومك بذكر الله.</p><a href="https://hisnmuslim.com/" target="_blank" rel="noopener noreferrer">اقرأ الأذكار ↗</a></details>
@@ -101,28 +195,96 @@ footer{text-align:center;padding:30px 15px 40px;color:#6f7a70;font-size:12px}
     <div class="actions" style="margin-top:14px"><a class="btn" href="https://hisnmuslim.com/" target="_blank" rel="noopener noreferrer">افتح حصن المسلم الكامل ↗</a></div>
 </section>
 
-<!-- قسم الأجر والتفاعل الفاخر -->
+<!-- قسم مكتبة التطبيقات الإسلامية النافعة -->
+<section class="section" id="apps">
+    <h2>📱 مكتبة التطبيقات الإسلامية</h2>
+    <p class="intro">تطبيقات دينية موثوقة وخالية من الإعلانات؛ الدال على الخير كفاعله، انشرها و استفد منها.</p>
+    
+    <div class="apps-grid">
+        <div class="app-card">
+            <div class="app-header">
+                <strong>ختمة (Khatmah)</strong>
+                <span class="app-badge">⭐ موثوق</span>
+            </div>
+            <p class="app-desc">التطبيق البطل لتنظيم الورد اليومي وختم القرآن بالراحة مع التنبيهات ومواقيت الصلاة.</p>
+            <details>
+                <summary class="app-details-toggle">تحميل التطبيق 🔽</summary>
+                <div class="store-buttons">
+                    <a href="https://apps.apple.com/us/app/%D8%AE%D8%AA%D9%85%D8%A9-khatmah-%D9%85%D8%B5%D8%AD%D9%81-%D8%A3%D8%B0%D8%A7%D9%86-%D8%A3%D8%B0%D9%83%D8%A7%D8%B1/id543090051" target="_blank" rel="noopener noreferrer" class="btn store-btn"> App Store</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.khatmah.android&hl=ar" target="_blank" rel="noopener noreferrer" class="btn outline store-btn">🤖 Google Play</a>
+                </div>
+            </details>
+        </div>
+
+        <div class="app-card">
+            <div class="app-header">
+                <strong>آيات (Ayat)</strong>
+                <span class="app-badge">⭐ موثوق</span>
+            </div>
+            <p class="app-desc">مصحف جامعة الملك سعود، صافي وبدون إعلانات، مع تفاسير وتلاوات متنوعة.</p>
+            <details>
+                <summary class="app-details-toggle">تحميل التطبيق 🔽</summary>
+                <div class="store-buttons">
+                    <a href="https://apps.apple.com/sa/app/ayat-al-quran-%D8%A7%D9%84%D9%82%D8%B1%D8%A2%D9%86/id634325420?l=ar" target="_blank" rel="noopener noreferrer" class="btn store-btn"> App Store</a>
+                    <a href="https://play.google.com/store/apps/details?id=sa.edu.ksu.Ayat&hl=ar" target="_blank" rel="noopener noreferrer" class="btn outline store-btn">🤖 Google Play</a>
+                </div>
+            </details>
+        </div>
+
+        <div class="app-card">
+            <div class="app-header">
+                <strong>ترتيل (Tarteel)</strong>
+                <span class="app-badge">⭐ ذكاء اصطناعي</span>
+            </div>
+            <p class="app-desc">تطبيق ذكي يتابع تلاوتك بالذكاء الاصطناعي ويصحح لك الحفظ والقراءة خطوة بخطوة.</p>
+            <details>
+                <summary class="app-details-toggle">تحميل التطبيق 🔽</summary>
+                <div class="store-buttons">
+                    <a href="https://apps.apple.com/om/app/%D8%AA%D8%B1%D8%AA%D9%8A%D9%84-%D8%AA%D8%AD%D9%81%D9%8A%D8%B8-%D8%A7%D9%84%D9%82%D8%B1%D8%A2%D9%86/id1391009396?l=ar" target="_blank" rel="noopener noreferrer" class="btn store-btn"> App Store</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.tarteel.app" target="_blank" rel="noopener noreferrer" class="btn outline store-btn">🤖 Google Play</a>
+                </div>
+            </details>
+        </div>
+
+        <div class="app-card">
+            <div class="app-header">
+                <strong>صلاتك (Salatuk)</strong>
+                <span class="app-badge">⭐ موثوق</span>
+            </div>
+            <p class="app-desc">منبه الصلاة المعتمد لضبط أوقات الصلوات واتجاه القبلة بدقة بحسب موقعك.</p>
+            <details>
+                <summary class="app-details-toggle">تحميل التطبيق 🔽</summary>
+                <div class="store-buttons">
+                    <a href="https://apps.apple.com/ae/app/salatuk-%D8%B5%D9%84%D8%A7%D8%AA%D9%83/id686077611?l=ar" target="_blank" rel="noopener noreferrer" class="btn store-btn"> App Store</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.masarat.salati&hl=ar" target="_blank" rel="noopener noreferrer" class="btn outline store-btn">🤖 Google Play</a>
+                </div>
+            </details>
+        </div>
+    </div>
+</section>
+
+<!-- قسم عداد الأجر والتسبيح -->
 <section class="section" id="interactive">
     <h2>⚡ عداد الأجر والتسبيح</h2>
     <p class="intro">أعمال يسيرة تترك أثراً عظيماً في ميزان حسنات الفقيد بإذن الله.</p>
     
     <div class="interactive-box">
-        <strong style="color: var(--g); display: block; margin-bottom: 6px;">الاستغفار والتسبيح لروح الفقيد</strong>
+        <strong style="color: var(--accent); display: block; margin-bottom: 6px;">الاستغفار والتسبيح لروح الفقيد</strong>
         <p class="small" style="margin-bottom: 12px;">انقر في كل مرة تقرأ فيها ذكراً أو استغفاراً:</p>
         <button class="btn" onclick="incrementTasbeeh()" id="tasbeeh-btn">استغفر الله العظيم (0)</button>
     </div>
 
     <div class="interactive-box">
-        <strong style="color: var(--g); display: block; margin-bottom: 6px;">تسجيل زيارة ودعاء</strong>
+        <strong style="color: var(--accent); display: block; margin-bottom: 6px;">تسجيل زيارة ودعاء</strong>
         <p class="small" style="margin-bottom: 12px;">سجّل حضورك اليومي بالدعاء له:</p>
         <button class="btn outline" onclick="recordDua()" id="dua-count-btn">دعوتُ له اليوم ❤️ (<span>142</span>)</button>
     </div>
 </section>
 
-<!-- سجل الدعاء التفاعلي الجديد -->
+<!-- ركن الدعاء والتعزية -->
 <section class="section" id="wall">
     <h2>📝 ركن الدعاء والتعزية</h2>
-    <p class="intro">اكتب كلمة طيبة أو دعاءً لأحمد الشبيبي ليبقى أثره هنا.</p>
+    <p class="intro">اكتب كلمة طيبة أو دعاءً لأحمد مبروك الشبيبي ليبقى أثره هنا.</p>
     
     <div class="wall-form">
         <input type="text" id="visitor-name" class="wall-input" placeholder="اسمك أو صفتك (اختياري، مثلاً: محب للخير)">
@@ -130,36 +292,50 @@ footer{text-align:center;padding:30px 15px 40px;color:#6f7a70;font-size:12px}
         <button class="btn" onclick="addDuaMessage()">إرسال الدعاء ونشره</button>
     </div>
 
-    <div class="wall-messages" id="messages-container">
-        <!-- تظهر الرسائل هنا ديناميكياً -->
-    </div>
+    <div class="wall-messages" id="messages-container"></div>
 </section>
 
+<!-- بطاقة التعريف الختامية -->
 <section class="section">
     <div class="profile">
-        <img src="saeed.jpg" alt="أحمد الشبيبي" class="avatar" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'76\' height=\'76\'><rect width=\'100%\' height=\'100%\' fill=\'%23d9bf7b\'/><text x=\'50%\' y=\'50%\' font-size=\'32\' text-anchor=\'middle\' dominant-baseline=\'central\' fill=\'%23315343\' font-family=\'Tahoma\'>س</text></svg>'">
+        <img src="saeed.jpg" alt="أحمد مبروك الشبيبي" class="avatar" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'76\' height=\'76\'><rect width=\'100%\' height=\'100%\' fill=\'%230284c7\'/><text x=\'50%\' y=\'50%\' font-size=\'32\' text-anchor=\'middle\' dominant-baseline=\'central\' fill=\'%23ffffff\' font-family=\'Tahoma\'>أ</text></svg>'">
         <div>
-            <h2 style="margin-bottom:0">ذكر طيب ودعاء</h2>
-            <p>أحمد مبروك الشبيبي رحمة الله علية</p>
-            <p class="small">اللهم اجعل هذا العمل نافعاً وخالصاً لوجهك الكريم شافعاً لأحمد مبروك الشبيبي.</p>
+            <h2 style="margin-bottom:0; font-size:18px">ذكر طيب ودعاء</h2>
+            <p style="margin:2px 0">أحمد مبروك الشبيبي رحمه الله</p>
+            <p class="small">اللهم اجعل هذا العمل نافعاً وخالصاً لوجهك الكريم وشافعاً له.</p>
         </div>
     </div>
 </section>
 </main>
 
 <footer>
-    <!-- عداد الزوار بزر العين المطلوب -->
     <div style="margin-bottom: 16px;">
         <div class="visitor-widget" onclick="toggleVisitorCount()" title="انقر لإظهار أو إخفاء عدد الزوار">
             <span id="eye-icon">🔒</span>
             <span>عدد الزوار: <span id="visitor-count" style="display:none; margin-right: 4px;">--</span></span>
         </div>
     </div>
-    اللهم اغفر له وارحمه، واجعل هذا العمل نافعًا وخالصاً لوجهك الكريم وشافعاً لأحمد مبروك الشبيبي.<br>يرجى مراجعة الروابط والمحتوى دوريًا.
+    اللهم اغفر له وارحمه، واجعل هذا العمل نافعًا وخالصًا لوجهك الكريم وشافعاً لأحمد مبروك الشبيبي.<br>يرجى مراجعة الروابط والمحتوى دوريًا.
 </footer>
 
 <script>
-// وظيفة المشاركة
+// الوضع الليلي (Dark Mode)
+function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+    const isDark = document.body.classList.contains('dark-mode');
+    localStorage.setItem('ahmed_dark_mode', isDark);
+    
+    document.getElementById('theme-icon').textContent = isDark ? '☀️' : '🌙';
+    document.getElementById('theme-text').textContent = isDark ? 'الوضع الفاتح' : 'الوضع الداكن';
+}
+
+if (localStorage.getItem('ahmed_dark_mode') === 'true') {
+    document.body.classList.add('dark-mode');
+    document.getElementById('theme-icon').textContent = '☀️';
+    document.getElementById('theme-text').textContent = 'الوضع الفاتح';
+}
+
+// مشاركة الصفحة
 async function sharePage(){
     const data={title:document.title,text:"صدقة جارية عن أحمد مبروك الشبيبي رحمه الله. نسألكم الدعاء له.",url:location.href};
     try{
@@ -169,26 +345,26 @@ async function sharePage(){
     }catch(e){}
 }
 
-// عداد التسبيح
-let tasbeehCount = localStorage.getItem('saeed_tasbeeh') || 0;
-let duaCount = parseInt(localStorage.getItem('saeed_duas') || 142);
+// عداد التسبيح والدعاء
+let tasbeehCount = localStorage.getItem('ahmed_tasbeeh') || 0;
+let duaCount = parseInt(localStorage.getItem('ahmed_duas') || 142);
 document.getElementById('tasbeeh-btn').innerText = `استغفر الله العظيم (${tasbeehCount})`;
 document.querySelector('#dua-count-btn span').innerText = duaCount;
 
 function incrementTasbeeh() {
     tasbeehCount++;
-    localStorage.setItem('saeed_tasbeeh', tasbeehCount);
+    localStorage.setItem('ahmed_tasbeeh', tasbeehCount);
     document.getElementById('tasbeeh-btn').innerText = `استغفر الله العظيم (${tasbeehCount})`;
 }
 
 function recordDua() {
     duaCount++;
-    localStorage.setItem('saeed_duas', duaCount);
+    localStorage.setItem('ahmed_duas', duaCount);
     document.querySelector('#dua-count-btn span').innerText = duaCount;
     alert('جزاك الله خيراً، تقبل الله دعاءك وغفر لأحمد مبروك الشبيبي ولجميع أموات المسلمين.');
 }
 
-// زر العين لعداد الزوار
+// عداد الزوار
 let isCountVisible = false;
 function toggleVisitorCount() {
     isCountVisible = !isCountVisible;
@@ -198,13 +374,13 @@ function toggleVisitorCount() {
     if (isCountVisible) {
         eyeIcon.textContent = '👁️';
         countSpan.style.display = 'inline';
-        let visits = localStorage.getItem('saeed_page_visits');
+        let visits = localStorage.getItem('ahmed_page_visits');
         if (!visits) {
             visits = 1250;
         } else {
             visits = parseInt(visits) + 1;
         }
-        localStorage.setItem('saeed_page_visits', visits);
+        localStorage.setItem('ahmed_page_visits', visits);
         countSpan.textContent = visits;
     } else {
         eyeIcon.textContent = '🔒';
@@ -212,14 +388,14 @@ function toggleVisitorCount() {
     }
 }
 
-// سجل الدعاء الحي (LocalStorage)
+// سجل الدعاء
 const defaultMessages = [
     {name: "فاعل خير", text: "اللهم اجعل قبره روضة من رياض الجنة وأسكنه الفردوس الأعلى."},
-    {name: "أبو محمد", text: "رحمه الله وأحسنا إليه، نسأل الله أن يكتب أجر هذا العمل في ميزان حسناته."}
+    {name: "محب للخير", text: "رحمه الله وأحسن إليه، نسأل الله أن يكتب أجر هذا العمل في ميزان حسناته."}
 ];
 
 function loadMessages() {
-    let saved = JSON.parse(localStorage.getItem('saeed_wall_msgs')) || defaultMessages;
+    let saved = JSON.parse(localStorage.getItem('ahmed_wall_msgs')) || defaultMessages;
     const container = document.getElementById('messages-container');
     container.innerHTML = '';
     saved.forEach(msg => {
@@ -240,9 +416,9 @@ function addDuaMessage() {
         return;
     }
     
-    let saved = JSON.parse(localStorage.getItem('saeed_wall_msgs')) || defaultMessages;
+    let saved = JSON.parse(localStorage.getItem('ahmed_wall_msgs')) || defaultMessages;
     saved.unshift({name: nameInput.value.trim() || 'زائر كريم', text: text});
-    localStorage.setItem('saeed_wall_msgs', JSON.stringify(saved));
+    localStorage.setItem('ahmed_wall_msgs', JSON.stringify(saved));
     
     textInput.value = '';
     nameInput.value = '';
@@ -250,7 +426,6 @@ function addDuaMessage() {
     alert('جزاك الله خيراً، تم نشر دعائك في ركن الدعاء.');
 }
 
-// تحميل الرسائل عند فتح الصفحة
 window.onload = loadMessages;
 </script>
 </body>
