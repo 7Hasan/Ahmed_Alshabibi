@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#0f172a">
-<meta name="description" content="صدقة جارية عن روح أحمد مبروك الشبيبي رحمه الله. قرآن كريم وأذكار ودعاء وتطبيقات نافعة.">
+<meta name="description" content="صدقة جارية عن روح أحمد مبروك الشبيبي رحمة الله عليه. قرآن كريم وأذكار ودعاء وتطبيقات نافعة.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="صدقة جارية عن أحمد مبروك الشبيبي رحمة الله عليه">
 <meta property="og:description" content="نسأل الله أن يغفر له ويرحمه، وأن يجعل هذا العمل نافعًا وشافعًا له.">
@@ -23,10 +23,9 @@
     --text-muted: #64748b;
     --border-color: #e2e8f0;
     --hero-grad: linear-gradient(145deg, #0f172a, #1e293b);
-    --gold: #38bdf8;          /* أزرق سماوي مضيء للتأكيدات */
+    --gold: #38bdf8;          
 }
 
-/* الوضع الداكن (Dark Mode) */
 body.dark-mode {
     --bg-main: #0b1329;
     --card-bg: #152238;
@@ -88,6 +87,15 @@ h2{font-size:21px;margin:0 0 8px;color:var(--accent);display:flex;align-items:ce
 .dua p{margin:0;font-size:16px;color:var(--text-main)}
 .small{font-size:12px;color:var(--text-muted)}
 
+/* صندوق الآية والتدبر */
+.ayah-box{background:var(--accent-light);padding:20px;border-radius:16px;border:1px solid var(--border-color);text-align:center;margin-bottom:15px}
+.ayah-text{font-size:18px;font-weight:bold;color:var(--text-main);margin-bottom:8px;line-height:1.6}
+.tafseer-text{font-size:13px;color:var(--text-muted);margin-bottom:14px}
+
+/* مشغل الصوت الهادئ */
+.audio-player-container{background:var(--accent-light);padding:14px 18px;border-radius:14px;border:1px solid var(--border-color);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
+audio{width:100%;max-width:320px;height:36px}
+
 /* تطبيقات نافعة */
 .apps-grid{display:grid;grid-template-columns:1fr;gap:12px;margin-top:14px}
 .app-card{background:var(--accent-light);border:1px solid var(--border-color);border-radius:16px;padding:16px;transition:all 0.2s}
@@ -100,7 +108,6 @@ h2{font-size:21px;margin:0 0 8px;color:var(--accent);display:flex;align-items:ce
 .store-buttons{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
 .store-btn{font-size:12px;padding:8px 12px;border-radius:8px}
 
-/* التفاعليات وسجل الدعاء */
 .interactive-box{background:var(--accent-light);padding:18px;border-radius:16px;text-align:center;margin-bottom:14px;border:1px solid var(--border-color)}
 .wall-form{display:flex;flex-direction:column;gap:10px;margin-top:12px}
 .wall-input{width:100%;padding:11px 14px;border:1px solid var(--border-color);border-radius:10px;font-family:inherit;font-size:14px;background:var(--card-bg);color:var(--text-main)}
@@ -123,31 +130,29 @@ footer{text-align:center;padding:30px 15px 40px;color:var(--text-muted);font-siz
 </head>
 <body>
 
-<!-- زر الوضع الليلي -->
 <button class="theme-toggle-btn" onclick="toggleDarkMode()" id="theme-btn">
     <span id="theme-icon">🌙</span> <span id="theme-text">الوضع الداكن</span>
 </button>
 
-<!-- الهيدر الرئيسي -->
 <header class="hero" id="top">
     <div class="inner">
         <div class="bism">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
         <div class="emblem" aria-hidden="true">۞</div>
         <h1>صدقة جارية<br>عن أحمد مبروك الشبيبي</h1>
-        <p class="subtitle">مساحة مباركة للقرآن والذكر والدعاء، نسأل الله أن ينفع بها، وأن يغفر لفقيدنا ويرحمه ويسكنه فسيح جناته.</p>
+        <p class="subtitle">مساحة مباركة للقرآن والذكر والدعاء، نسأل الله أن ينفع بها، وأن يغفر لفقيدنا ويرحمه.</p>
         <div class="name-card">
             <img src="saeed.jpg" alt="أحمد مبروك الشبيبي رحمه الله" class="deceased-img" onerror="this.style.display='none'">
             <div>
-                <strong>أحمد مبروك الشبيبي رحمة الله عليه</strong>
+                <strong>أحمد مبروك الشبيبي رحمه الله</strong>
                 <p>اللهم اغفر له وارحمه، وعافه واعفُ عنه، وأكرم نزله ووسّع مدخله.</p>
             </div>
         </div>
     </div>
 </header>
 
-<!-- شريط التنقل العلوي -->
 <nav aria-label="التنقل">
     <a href="#quran">القرآن الكريم</a>
+    <a href="#ayah">آية وتفكر</a>
     <a href="#dua">الدعاء</a>
     <a href="#adhkar">الأذكار</a>
     <a href="#apps">تطبيقات نافعة</a>
@@ -156,15 +161,41 @@ footer{text-align:center;padding:30px 15px 40px;color:var(--text-muted);font-siz
 </nav>
 
 <main>
-<!-- قسم القرآن الكريم -->
+<!-- قسم القرآن الكريم والتلاوة -->
 <section class="section" id="quran">
-    <h2>📖 القرآن الكريم</h2>
-    <p class="intro">اقرأ القرآن الكريم أو استمع إلى التلاوات من أصح المصادر الموثوقة.</p>
+    <h2>📖 القرآن الكريم وتلاوات خاشعة</h2>
+    <p class="intro">اقرأ القرآن الكريم أو استمع لتلاوة هادئة خاشعة أثناء تصفحك.</p>
+    
+    <!-- مشغل صوتي مدمج -->
+    <div class="audio-player-container" style="margin-bottom:16px">
+        <div>
+            <strong style="display:block; font-size:14px">تلاوة خاشعة (سورة الرحمن)</strong>
+            <span class="small">بصوت الشيخ القارئ</span>
+        </div>
+        <audio controls preload="none">
+            <source src="https://server10.mp3quran.net/ajm/055.mp3" type="audio/mpeg">
+            متصفحك لا يدعم مشغل الصوت.
+        </audio>
+    </div>
+
     <div class="actions">
         <a class="btn" href="https://quran.com/ar" target="_blank" rel="noopener noreferrer">افتح المصحف الإلكتروني ↗</a>
-        <a class="btn outline" href="https://everyayah.com/" target="_blank" rel="noopener noreferrer">استمع إلى التلاوات ↗</a>
+        <a class="btn outline" href="https://everyayah.com/" target="_blank" rel="noopener noreferrer">استمع للتلاوات ↗</a>
     </div>
-    <p class="small" style="margin-top:10px">تُفتح القراءة والتلاوة من مواقعها الأصلية المعتمدة.</p>
+</section>
+
+<!-- قسم آية اليوم والتدبر -->
+<section class="section" id="ayah">
+    <h2>✨ آية وتفكر</h2>
+    <p class="intro">تأمل آيات الله واجعل أجر قراءتها وتدبرها لفقيدنا أحمد رحمه الله.</p>
+    
+    <div class="ayah-box">
+        <div class="ayah-text" id="ayah-content">"وَبَشِّرِ الصَّابِرِينَ ۝ الَّذِينَ إِذَا أَصَابَتْهُم مُّصِيبَةٌ قَالُوا إِنَّا لِلَّهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ"</div>
+        <div class="tafseer-text" id="ayah-tafseer">التفسير: وبشِّر الصابرين على البلاء بما يسرّهم، الذين من صفاتهم أنهم إذا أصابهم مكروه قالوا: إنا عباد لله، وإنا إليه راجعون يوم القيامة.</div>
+        <div style="display:flex; gap:10px; justify-content:center">
+            <button class="btn outline" onclick="nextAyah()" style="padding:6px 14px; font-size:12px">🔄 آية أخرى</button>
+        </div>
+    </div>
 </section>
 
 <!-- قسم الدعاء -->
@@ -175,30 +206,29 @@ footer{text-align:center;padding:30px 15px 40px;color:var(--text-muted);font-siz
     <div class="dua"><p>اللهم آنس وحشته، ونوّر قبره، واجعل قبره روضةً من رياض الجنة.</p></div>
     <div class="dua">
         <p>اللهم اغفر له وارفع درجته في المهديين، واخلفه في عقبه في الغابرين، واغفر لنا وله يا رب العالمين.</p>
-        <div class="small" style="margin-top:6px">دعاء مأثور في صحيح مسلم، مع استبدال الضمير باسم الفقيد.</div>
+        <div class="small" style="margin-top:6px">دعاء مأثور في صحيح مسلم.</div>
     </div>
     <div style="margin-top:14px">
         <button class="btn" onclick="sharePage()">شارك الصفحة ليدعو له الملايين ↗</button>
     </div>
 </section>
 
-<!-- قسم الأذكار اليومية -->
+<!-- قسم الأذكار -->
 <section class="section" id="adhkar">
     <h2>🌿 الأذكار اليومية</h2>
-    <p class="intro">حصن لسانك وقلبك واجعل ثوابها لك و واصلاً لفقيدنا والله يضاعف لمن يشاء.</p>
+    <p class="intro">حصن لسانك وقلبك واجعل ثوابها واصلاً لفقيدنا.</p>
     <div class="tilegrid">
         <details class="tile"><summary><div class="ico">🌅</div><strong>أذكار الصباح</strong><span>افتح الأذكار</span></summary><p>ابدأ يومك بذكر الله.</p><a href="https://hisnmuslim.com/" target="_blank" rel="noopener noreferrer">اقرأ الأذكار ↗</a></details>
         <details class="tile"><summary><div class="ico">🌇</div><strong>أذكار المساء</strong><span>افتح الأذكار</span></summary><p>اختم يومك بذكر الله.</p><a href="https://hisnmuslim.com/" target="_blank" rel="noopener noreferrer">اقرأ الأذكار ↗</a></details>
         <details class="tile"><summary><div class="ico">🕌</div><strong>بعد الصلاة</strong><span>افتح الأذكار</span></summary><p>أذكار ما بعد الصلاة.</p><a href="https://hisnmuslim.com/" target="_blank" rel="noopener noreferrer">اقرأ الأذكار ↗</a></details>
         <details class="tile"><summary><div class="ico">🌙</div><strong>أذكار النوم</strong><span>افتح الأذكار</span></summary><p>أذكار قبل النوم.</p><a href="https://hisnmuslim.com/" target="_blank" rel="noopener noreferrer">اقرأ الأذكار ↗</a></details>
     </div>
-    <div class="actions" style="margin-top:14px"><a class="btn" href="https://hisnmuslim.com/" target="_blank" rel="noopener noreferrer">افتح حصن المسلم الكامل ↗</a></div>
 </section>
 
-<!-- قسم مكتبة التطبيقات الإسلامية النافعة -->
+<!-- قسم تطبيقات نافعة -->
 <section class="section" id="apps">
     <h2>📱 مكتبة التطبيقات الإسلامية</h2>
-    <p class="intro">تطبيقات دينية موثوقة وخالية من الإعلانات؛ الدال على الخير كفاعله، انشرها و استفد منها.</p>
+    <p class="intro">تطبيقات دينية موثوقة وخالية من الإعلانات؛ الدال على الخير كفاعله.</p>
     
     <div class="apps-grid">
         <div class="app-card">
@@ -206,7 +236,7 @@ footer{text-align:center;padding:30px 15px 40px;color:var(--text-muted);font-siz
                 <strong>ختمة (Khatmah)</strong>
                 <span class="app-badge">⭐ موثوق</span>
             </div>
-            <p class="app-desc">التطبيق البطل لتنظيم الورد اليومي وختم القرآن بالراحة مع التنبيهات ومواقيت الصلاة.</p>
+            <p class="app-desc">تنظيم الورد اليومي وختم القرآن بالراحة مع التنبيهات ومواقيت الصلاة.</p>
             <details>
                 <summary class="app-details-toggle">تحميل التطبيق 🔽</summary>
                 <div class="store-buttons">
@@ -225,47 +255,17 @@ footer{text-align:center;padding:30px 15px 40px;color:var(--text-muted);font-siz
             <details>
                 <summary class="app-details-toggle">تحميل التطبيق 🔽</summary>
                 <div class="store-buttons">
-                    <a href="https://apps.apple.com/sa/app/ayat-al-quran-%D8%A7%D9%84%D9%82%D8%B1%D8%A2%D9%86/id634325420?l=ar" target="_blank" rel="noopener noreferrer" class="btn store-btn"> App Store</a>
+                    <a href="https://apps.apple.com/sa/app/ayat-al-quran-%D8%A7%D9%8ل%D9%82%D8%B1%D8%A2%D9%86/id634325420?l=ar" target="_blank" rel="noopener noreferrer" class="btn store-btn"> App Store</a>
                     <a href="https://play.google.com/store/apps/details?id=sa.edu.ksu.Ayat&hl=ar" target="_blank" rel="noopener noreferrer" class="btn outline store-btn">🤖 Google Play</a>
-                </div>
-            </details>
-        </div>
-
-        <div class="app-card">
-            <div class="app-header">
-                <strong>ترتيل (Tarteel)</strong>
-                <span class="app-badge">⭐ ذكاء اصطناعي</span>
-            </div>
-            <p class="app-desc">تطبيق ذكي يتابع تلاوتك بالذكاء الاصطناعي ويصحح لك الحفظ والقراءة خطوة بخطوة.</p>
-            <details>
-                <summary class="app-details-toggle">تحميل التطبيق 🔽</summary>
-                <div class="store-buttons">
-                    <a href="https://apps.apple.com/om/app/%D8%AA%D8%B1%D8%AA%D9%8A%D9%84-%D8%AA%D8%AD%D9%81%D9%8A%D8%B8-%D8%A7%D9%84%D9%82%D8%B1%D8%A2%D9%86/id1391009396?l=ar" target="_blank" rel="noopener noreferrer" class="btn store-btn"> App Store</a>
-                    <a href="https://play.google.com/store/apps/details?id=com.tarteel.app" target="_blank" rel="noopener noreferrer" class="btn outline store-btn">🤖 Google Play</a>
-                </div>
-            </details>
-        </div>
-
-        <div class="app-card">
-            <div class="app-header">
-                <strong>صلاتك (Salatuk)</strong>
-                <span class="app-badge">⭐ موثوق</span>
-            </div>
-            <p class="app-desc">منبه الصلاة المعتمد لضبط أوقات الصلوات واتجاه القبلة بدقة بحسب موقعك.</p>
-            <details>
-                <summary class="app-details-toggle">تحميل التطبيق 🔽</summary>
-                <div class="store-buttons">
-                    <a href="https://apps.apple.com/ae/app/salatuk-%D8%B5%D9%84%D8%A7%D8%AA%D9%83/id686077611?l=ar" target="_blank" rel="noopener noreferrer" class="btn store-btn"> App Store</a>
-                    <a href="https://play.google.com/store/apps/details?id=com.masarat.salati&hl=ar" target="_blank" rel="noopener noreferrer" class="btn outline store-btn">🤖 Google Play</a>
                 </div>
             </details>
         </div>
     </div>
 </section>
 
-<!-- قسم عداد الأجر والتسبيح -->
+<!-- العدادات والختمة التعاونية -->
 <section class="section" id="interactive">
-    <h2>⚡ عداد الأجر والتسبيح</h2>
+    <h2>⚡ عداد الأجر والختمة التعاونية</h2>
     <p class="intro">أعمال يسيرة تترك أثراً عظيماً في ميزان حسنات الفقيد بإذن الله.</p>
     
     <div class="interactive-box">
@@ -274,14 +274,15 @@ footer{text-align:center;padding:30px 15px 40px;color:var(--text-muted);font-siz
         <button class="btn" onclick="incrementTasbeeh()" id="tasbeeh-btn">استغفر الله العظيم (0)</button>
     </div>
 
+    <!-- الختمة التعاونية -->
     <div class="interactive-box">
-        <strong style="color: var(--accent); display: block; margin-bottom: 6px;">تسجيل زيارة ودعاء</strong>
-        <p class="small" style="margin-bottom: 12px;">سجّل حضورك اليومي بالدعاء له:</p>
-        <button class="btn outline" onclick="recordDua()" id="dua-count-btn">دعوتُ له اليوم ❤️ (<span>142</span>)</button>
+        <strong style="color: var(--accent); display: block; margin-bottom: 6px;">📖 الختمة التعاونية</strong>
+        <p class="small" style="margin-bottom: 12px;">هل قرأت جزءاً من القرآن بنية الصدقة عن أحمد؟ اضغط لإضافته للمجموع:</p>
+        <button class="btn outline" onclick="recordJuz()" id="juz-btn">قرأتُ جزءاً من القرآن ❤️ (مجموع الأجزاء: <span id="juz-count">34</span>)</button>
     </div>
 </section>
 
-<!-- ركن الدعاء والتعزية -->
+<!-- ركن الدعاء -->
 <section class="section" id="wall">
     <h2>📝 ركن الدعاء والتعزية</h2>
     <p class="intro">اكتب كلمة طيبة أو دعاءً لأحمد مبروك الشبيبي ليبقى أثره هنا.</p>
@@ -295,7 +296,6 @@ footer{text-align:center;padding:30px 15px 40px;color:var(--text-muted);font-siz
     <div class="wall-messages" id="messages-container"></div>
 </section>
 
-<!-- بطاقة التعريف الختامية -->
 <section class="section">
     <div class="profile">
         <img src="saeed.jpg" alt="أحمد مبروك الشبيبي" class="avatar" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'76\' height=\'76\'><rect width=\'100%\' height=\'100%\' fill=\'%230284c7\'/><text x=\'50%\' y=\'50%\' font-size=\'32\' text-anchor=\'middle\' dominant-baseline=\'central\' fill=\'%23ffffff\' font-family=\'Tahoma\'>أ</text></svg>'">
@@ -315,11 +315,11 @@ footer{text-align:center;padding:30px 15px 40px;color:var(--text-muted);font-siz
             <span>عدد الزوار: <span id="visitor-count" style="display:none; margin-right: 4px;">--</span></span>
         </div>
     </div>
-    اللهم اغفر له وارحمه، واجعل هذا العمل نافعًا وخالصًا لوجهك الكريم وشافعاً لأحمد مبروك الشبيبي.<br>يرجى مراجعة الروابط والمحتوى دوريًا.
+    اللهم اغفر له وارحمه، واجعل هذا العمل نافعًا وخالصًا لوجهك الكريم وشافعاً لأحمد مبروك الشبيبي.
 </footer>
 
 <script>
-// الوضع الليلي (Dark Mode)
+// الوضع الليلي
 function toggleDarkMode() {
     document.body.classList.toggle('dark-mode');
     const isDark = document.body.classList.contains('dark-mode');
@@ -335,6 +335,20 @@ if (localStorage.getItem('ahmed_dark_mode') === 'true') {
     document.getElementById('theme-text').textContent = 'الوضع الفاتح';
 }
 
+// قائمة الآيات والتدبر
+const ayahs = [
+    { text: '"وَبَشِّرِ الصَّابِرِينَ ۝ الَّذِينَ إِذَا أَصَابَتْهُم مُّصِيبَةٌ قَالُوا إِنَّا لِلَّهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ"', tafseer: "التفسير: وبشِّر الصابرين على البلاء بما يسرّهم، الذين من صفاتهم أنهم إذا أصابهم مكروه قالوا: إنا عباد لله، وإنا إليه راجعون." },
+    { text: '"وَالْبَاقِيَاتُ الصَّالِحَاتُ خَيْرٌ عِندَ رَبِّكَ ثَوَابًا وَخَيْرٌ أَمَلًا"', tafseer: "التفسير: الأعمال الصالحة التي يبقى ثوابها كالتسبيح والتحميد وقراءة القرآن هي خير عند الله ثواباً وأملاً." },
+    { text: '"إِنَّ الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ كَانَتْ لَهُمْ جَنَّاتُ الْفِرْدَوْسِ نُزُلًا"', tafseer: "التفسير: إن الذين آمنوا بالله ورسوله وعملوا الصالحات، كانت لهم أعلى الجنان ضيافة ومنزلاً." }
+];
+let currentAyahIndex = 0;
+
+function nextAyah() {
+    currentAyahIndex = (currentAyahIndex + 1) % ayahs.length;
+    document.getElementById('ayah-content').textContent = ayahs[currentAyahIndex].text;
+    document.getElementById('ayah-tafseer').textContent = ayahs[currentAyahIndex].tafseer;
+}
+
 // مشاركة الصفحة
 async function sharePage(){
     const data={title:document.title,text:"صدقة جارية عن أحمد مبروك الشبيبي رحمه الله. نسألكم الدعاء له.",url:location.href};
@@ -345,11 +359,12 @@ async function sharePage(){
     }catch(e){}
 }
 
-// عداد التسبيح والدعاء
+// العدادات
 let tasbeehCount = localStorage.getItem('ahmed_tasbeeh') || 0;
-let duaCount = parseInt(localStorage.getItem('ahmed_duas') || 142);
+let juzCount = parseInt(localStorage.getItem('ahmed_juz_count') || 34);
+
 document.getElementById('tasbeeh-btn').innerText = `استغفر الله العظيم (${tasbeehCount})`;
-document.querySelector('#dua-count-btn span').innerText = duaCount;
+document.getElementById('juz-count').innerText = juzCount;
 
 function incrementTasbeeh() {
     tasbeehCount++;
@@ -357,11 +372,11 @@ function incrementTasbeeh() {
     document.getElementById('tasbeeh-btn').innerText = `استغفر الله العظيم (${tasbeehCount})`;
 }
 
-function recordDua() {
-    duaCount++;
-    localStorage.setItem('ahmed_duas', duaCount);
-    document.querySelector('#dua-count-btn span').innerText = duaCount;
-    alert('جزاك الله خيراً، تقبل الله دعاءك وغفر لأحمد مبروك الشبيبي ولجميع أموات المسلمين.');
+function recordJuz() {
+    juzCount++;
+    localStorage.setItem('ahmed_juz_count', juzCount);
+    document.getElementById('juz-count').innerText = juzCount;
+    alert('تقبل الله منك وجعل قراءتك نوراً وأجراً مضاعفاً لأحمد مبروك الشبيبي.');
 }
 
 // عداد الزوار
@@ -374,12 +389,8 @@ function toggleVisitorCount() {
     if (isCountVisible) {
         eyeIcon.textContent = '👁️';
         countSpan.style.display = 'inline';
-        let visits = localStorage.getItem('ahmed_page_visits');
-        if (!visits) {
-            visits = 1250;
-        } else {
-            visits = parseInt(visits) + 1;
-        }
+        let visits = localStorage.getItem('ahmed_page_visits') || 1250;
+        visits = parseInt(visits) + 1;
         localStorage.setItem('ahmed_page_visits', visits);
         countSpan.textContent = visits;
     } else {
